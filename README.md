@@ -11,13 +11,13 @@ The dataset is fairly balanced for this binary classification problem i.e. diabe
 Input features are centered to their mean and scaled by their standard deviation before model exploration.  
 Among the models tried using scikit-learn, Linear SVM and Logistic Regression performed better in cross validation while tree based methods, Decision Tree and Random Forrest are worse with wider distribution of their acccuracies. Finally ensamble method was applied with 3 classifiers combined: Linear SVM, radial SVM and Logistic Regression.  
 ROC curves and precision vs. recall were explored for all the models.  
-A neural network model with 5 fully connected layers was explored using Keras for prediction model, binary_crossentropy loss was used with Adam optimizer, activation was relu except the output layer being with sigmoid activation.  
+A neural network model with 5 fully connected layers was explored using Keras for prediction model with loss: binary_crossentropy, Optimizer: Adam, batch size: 50 and epoch: 150 (more is better but we have a small dataset here), activation was relu except the output layer being with sigmoid activation.  
 
 ## Key findings:
 * Close to 80% overall accuracy is obtained based on this dataset to predict diabetes in a person using ensemble model among different methods evalauted as well as NN model.
 * Non diabetes cases are predicted more accurately than diabetes cases.
 * NN model gave better prediction of diabetes cases than ensamble model (66% vs. 54%).
 * Based on Random Forest feature importance, Glucose, BMI, Age and diabetes pedigree are top causes for diabetes.
-* Based on parameter correlation, no given single parameter can predict diabetes.
+* Based on parameter distribution and correlation, no single parameter can predict diabetes.
 ## Future work and improvement
-* More data, feature engineering and larger NN model is expected to improve diabetes prediction accuracy.
+* More data (this dataset is a small sample size including only women moer than 21 years old, feature engineering and larger NN model is expected to improve diabetes prediction accuracy.
