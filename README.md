@@ -20,6 +20,6 @@ A neural network model with 5 fully connected layers was explored using Keras fo
 * Based on Random Forest feature importance, Glucose, BMI, Age and diabetes pedigree are top causes for diabetes.
 * Based on parameter distribution and correlation, no single parameter can predict diabetes.
 ## Future work and improvement
-* More data. This dataset is a small sample size including only women moer than 21 years old. 
+* More data. This dataset is a small sample size including only women of more than 21 years of age. 
 * Feature engineering. Need to see impact of any cross term or higher order term.
 * Larger NN model. Typically larger networks with more layers and more iterations (epochs) improve diabetes prediction accuracy.
